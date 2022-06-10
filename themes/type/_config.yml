@@ -27,7 +27,7 @@ schemes: m3
 fonts: LXGW
 
 # Random Pictures
-random_pic_switch: true
+random_pic_switch: false
 random_pics: 19
 random_thumbnail: ../img/random/randompic-
 
@@ -35,7 +35,7 @@ random_thumbnail: ../img/random/randompic-
 # Header and Nav Settings 页眉、导航和封面设置
 # ---------------------------------------------------------------
 
-# Header Cover
+# Header Cover 首页封面背景图
 header: 
   img:
 
@@ -45,9 +45,6 @@ header:
 # Header Links
 search_btn: true
 nav:
-#  首页:
-#    link: /
-#    icon: home
   归档: 
     link: /archives/
     icon:   move_to_inbox
@@ -58,12 +55,10 @@ nav:
 #    link: /links.html
 #    icon: link
 
-# Cover Links
+# Cover Links 封面底部链接
 cover_links:
-  - title: Tripper.Press
-    link: https://tripper.press/
-    avatar: //imgur.lzmun.com/picgo/after2022/presslogo.png_avatar
-    descr: 'Tripper Press'
+  - title: GitHub
+    link: https://github.com/zS1m
 
 # Materiac ICON from https://www.mdui.org/docs/material_icon
 
@@ -71,9 +66,9 @@ cover_links:
 # Footer Settings 页脚设置
 # ---------------------------------------------------------------
 
-start_time: 
+start_time: 2022
 # 'count' need run 'npm install hexo-symbols-count-time --save'
-count: false
+count: true
 icp: 
 
 # CDN LOGO
@@ -90,7 +85,7 @@ cdn:
 # Social link 社交链接
 social_link:
   # 
-  use: true
+  use: false
   # 在这里开启微信二维码
   wechat_personal: 
     switch: false
@@ -126,7 +121,7 @@ highlight:
 # Use gitment | valine | disqus | disqusjs | gitalk | waline
 # disqusjs 参考 https://github.com/SukkaW/DisqusJS 进行部署
 comment:
-  use: 
+  use: waline
   gitment:
     owner:
     repo:
@@ -153,7 +148,7 @@ comment:
     admin: 
     distractionFreeMode: 
   waline:
-    serverurl: 
+    serverurl: https://contrails-waline.vercel.app/
 
 # Busuanzi Count 不蒜子计数
 busuanzi: false
@@ -162,8 +157,10 @@ busuanzi: false
 # cloudflare-workers-async-google-analytics
 # if use is default, it will use analytics.js
 # if use is cf_async, look at the https://github.com/SukkaW/cloudflare-workers-async-google-analytics to learn more
+# if use is gtag，will use Google GA 4 id gtag.js
 # 如果 use 项选择 default，将使用 analytics.js 文件接入谷歌分析
 # 如果 use 项目选择 cf_async，请浏览 https://github.com/SukkaW/cloudflare-workers-async-google-analytics 进行配置
+# 如果 use 项选择 gtag，将使用 Google 全局网站代码 (gtag.js) 接入谷歌分析
 
 google_analytics:
   # use: default
