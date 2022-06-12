@@ -1,0 +1,327 @@
+:root {
+  --radius: 5px;
+}
+
+.v {
+  background: url(../img/forum_black_24dp.svg);
+  background-position: right -45px top -35px;
+  background-repeat: no-repeat;
+  background-size: 150px;
+  background-clip: padding-box;
+  margin: 65px 0 65px 0;
+  padding: 22px;
+  border-radius: 5px;
+  padding: 24px;
+}
+.v .vcomment {
+  margin-bottom: 58px;
+  display: flex;
+}
+.v .vlogin-info {
+  max-width: 80px;
+  margin-right: 10px;
+  text-align: center;
+}
+.v .vlogin-info a.vlogin-nick {
+  font-size: 14px;
+}
+.v .vlogin-info .vavatar {
+  position: relative;
+}
+.v .vlogin-info .vavatar .vlogout-btn {
+  position: absolute;
+  top: -10px;
+  left: 27px;
+  padding: 3px;
+  border: none;
+  background: transparent;
+  line-height: 0;
+  cursor: pointer;
+}
+.v .vlogin-info .vavatar img {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+.v .vlogin-info .vclose-icon {
+  color: #bababa;
+}
+.v .vpanel {
+  width: 100%;
+}
+.v .vpanel .vheader {
+  padding-bottom: 24px;
+  display: flex;
+  overflow: hidden;
+}
+@media (max-width: 1024px) {
+  .v .vpanel .vheader {
+    display: block;
+  }
+}
+.v .vpanel .vheader .vheader-item {
+  border: 0;
+}
+.v .vpanel .vheader label {
+  padding: 0 6px;
+  color: #767676;
+  font-size: 14px;
+}
+.v .vpanel .vheader .vinput {
+  width: calc(80% - 20px);
+  border: 0px;
+  font-size: 14px;
+  outline-style: none;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  line-height: 20px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.v .vpanel .veditor {
+  width: 100%;
+  min-height: 120px;
+  font-size: 14px;
+  margin: 2px;
+  border: 0px;
+  border: 0px;
+  border-bottom: 2px solid #767676;
+  outline-style: none;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  line-height: 20px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.v .vpanel .veditor:focus {
+  border-bottom: 2px solid #71afdd;
+}
+.v .vpanel .vfooter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.v .vpanel .vfooter .vactions {
+  display: flex;
+  align-items: center;
+}
+.v .vpanel .vfooter .vactions .vaction {
+  margin: 0px 6px 0 0;
+}
+.v .vpanel .vfooter .vactions .vaction svg {
+  margin-top: 2px;
+  color: white;
+  width: 18px;
+}
+.v .vpanel .vfooter .vactions a.vaction {
+  display: none;
+}
+.v .vpanel .vfooter .vactions .upload {
+  display: none;
+}
+.v .vpanel .vfooter .vinfo {
+  display: flex;
+  flex: 2;
+  align-items: center;
+  justify-content: flex-end;
+}
+.v .vpanel .vfooter .vtext-number {
+  color: #52596a;
+  line-height: 24px;
+  font-size: 14px;
+}
+.v .vpanel .vfooter .vaction,
+.v .vpanel .vfooter .vbtn {
+  align-items: center;
+  display: block;
+  border: none;
+  background-color: #71afdd;
+  opacity: 0.8;
+  border-radius: 6px;
+  color: #52596a;
+  height: 30px;
+}
+.v .vpanel .vfooter .vbtn {
+  color: white;
+  width: 54px;
+  font-size: 14px;
+  margin: 0 0 0 6px;
+}
+.v .vpanel .vfooter .vactuon {
+  width: 32px;
+}
+.v .vpanel .vfooter .vbtn.primary {
+  background: linear-gradient(120deg, rgba(113, 174, 221, 0.7450980392), rgba(102, 222, 210, 0.7450980392));
+}
+.v .vpanel .vpreview {
+  margin: 14px 0;
+}
+.v .vemoji-popup {
+  visibility: hidden;
+  display: none;
+  margin: 12px;
+}
+.v .vemoji-popup .vtab-wrapper {
+  max-height: 145px;
+  overflow-y: auto;
+  padding: 0.5em;
+}
+.v .vemoji-popup .vtab-wrapper button {
+  border: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+.v .vemoji-popup .vtab-wrapper button img {
+  width: 2em;
+  display: inline-block;
+}
+.v .vclose {
+  align-items: center;
+  display: block;
+  border: none;
+  opacity: 0.8;
+  border-radius: 6px;
+  color: rgba(255, 255, 255, 0);
+  width: 54px;
+  font-size: 14px;
+  margin: 0 0 0 6px;
+}
+.v .display {
+  visibility: visible;
+  display: flex;
+}
+.v .vcount {
+  display: flex;
+  font-size: 14px;
+  color: #52596a;
+  border-bottom: #767676 solid 0.5px;
+  margin-bottom: 12px;
+}
+.v .vcards .vitem {
+  position: relative;
+  display: flex;
+  padding: 1em 0.5em;
+}
+.v .vcards .vitem img.vuser {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+.v .vcards .vitem .vcard {
+  font-size: 12px;
+  margin-left: 1em;
+  flex: 1;
+}
+.v .vcards .vitem .vcard .vhead {
+  margin-bottom: 6px;
+}
+.v .vcards .vitem .vcard .vnick {
+  color: #71afdd;
+  font-weight: 400;
+}
+.v .vcards .vitem .vcard .vbadge {
+  background-color: #71afdd;
+  color: white;
+  border-radius: 2px;
+  padding: 2px 4px;
+  margin-right: 6px;
+  display: inline-block;
+}
+.v .vcards .vitem .vcard .vtime {
+  margin-left: 6px;
+}
+.v .vcards .vitem .vcard .vmeta {
+  margin-bottom: 6px;
+}
+.v .vcards .vitem .vcard .vmeta span {
+  background-color: #d7d7d7;
+  color: white;
+  border-radius: 2px;
+  padding: 2px 4px;
+  margin-right: 6px;
+  display: inline-block;
+}
+.v .vcards .vitem .vcard .vreply {
+  float: right;
+  cursor: pointer;
+  padding: 4px;
+  border: none;
+  background: transparent;
+  color: var(--waline-text-color);
+  line-height: 1;
+  transition: color 0.2s ease;
+}
+.v .vcards .vitem .vcard .vemoji {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.5em;
+  margin: 0.25em;
+}
+.v .vcontent {
+  line-height: 1.8rem;
+  position: relative;
+  word-wrap: break-word;
+}
+.v .vcontent h1 {
+  font-size: 24px;
+}
+.v .vcontent h2 {
+  font-size: 22px;
+}
+.v .vcontent h3 {
+  font-size: 20px;
+}
+.v .vcontent h4 {
+  font-size: 18px;
+}
+.v .vcontent h5 {
+  font-size: 16px;
+}
+.v .vcontent h6 {
+  font-size: 14px;
+}
+.v .vcontent p {
+  font-size: 14px;
+}
+.v .vcontent blockquote {
+  border-left: #52596a solid 2px;
+}
+.v .vcontent blockquote p {
+  padding-left: 7px;
+}
+.v .vempty {
+  text-align: center;
+  color: #52596a;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.v .vmore {
+  text-align: center;
+}
+.v .vmore .vbtn {
+  margin: 30px 0;
+  border: 0;
+  border-radius: 6px;
+  opacity: 0.8;
+  background-color: #71afdd;
+  width: 150px;
+  height: 30px;
+  color: white;
+  font-size: 14px;
+}
+.v .vloading {
+  text-align: center;
+  margin: 30px 0;
+}
+.v .vloading svg {
+  margin: 0 auto;
+}
+.v .vpower {
+  color: #52596a;
+  font-size: 10px;
+  text-align: center;
+}
+.v .vpower a {
+  color: #52596a;
+}
