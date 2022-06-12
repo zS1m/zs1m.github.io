@@ -3,7 +3,7 @@
 # ---------------------------------------------------------------
 
 favicon: 
-avatar: 
+avatar: https://tva1.sinaimg.cn/large/0079IXMbgy1h35h7a8fgmj30hs0hs74w.jpg
 apple_icon:
   # iPhone 57x57 
   iphone: 
@@ -37,7 +37,7 @@ random_thumbnail: ../img/random/randompic-
 
 # Header Cover 首页封面背景图
 header: 
-  img:
+  img: https://tva1.sinaimg.cn/large/0079IXMbgy1h35cz7q1a9j31p412tkjm.jpg
 
 # drawer_header: 
 # drawer was removed
@@ -85,7 +85,7 @@ cdn:
 # Social link 社交链接
 social_link:
   # 
-  use: false
+  use: true
   # 在这里开启微信二维码
   wechat_personal: 
     switch: false
