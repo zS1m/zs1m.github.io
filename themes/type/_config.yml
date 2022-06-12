@@ -2,7 +2,7 @@
 # ICON Settings 图标设置
 # ---------------------------------------------------------------
 
-favicon: 
+favicon:
 avatar: https://tva1.sinaimg.cn/large/0079IXMbgy1h35h7a8fgmj30hs0hs74w.jpg
 apple_icon:
   # iPhone 57x57 
@@ -49,7 +49,7 @@ nav:
     link: /archives/
     icon:   move_to_inbox
   关于:
-    link: /about.html
+    link: /about/
     icon: person
 #  友链:
 #    link: /links.html
