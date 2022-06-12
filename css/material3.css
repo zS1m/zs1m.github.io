@@ -31,6 +31,9 @@
   }
 }
 
+.itp-m3-post-entry-info {
+  /* 摘要字体 */
+}
 @media screen and (min-width: 1024px) {
   .itp-m3-post-entry-info {
     padding: 42px 54px 54px 54px;
@@ -58,7 +61,7 @@
 }
 .itp-m3-post-entry-info .excerpt,
 .itp-m3-post-entry-info .meta {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 20px;
   font-weight: 400;
   color: #767676;
